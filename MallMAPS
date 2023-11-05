@@ -1,0 +1,42 @@
+
+
+package com.mycompany.mallmap;
+
+import java.util.HashMap;
+
+
+public class MallMap {
+
+    public static void main(String[] args) {
+       HashMap<String,Integer> storeIds = new HashMap<>();
+       
+       storeIds.put("Mr Price",12345);
+       storeIds.put("Edgars",6789);
+       storeIds.put("Woolworths",33455);
+         storeIds.put("Truthworths",34487);
+         
+         System.out.println(storeIds);
+       
+        System.out.println(storeIds.get("Mr Price"));
+        System.out.println(storeIds.get("Edgars"));
+        System.out.println(storeIds.get("Woolworths"));
+        System.out.println(storeIds.get("Truthworths"));
+        
+        System.out.println(storeIds.containsKey("Edgars"));
+        System.out.println(storeIds.containsValue(6789));
+      
+        storeIds.put("Woolworths",35468);
+        System.out.println(storeIds);
+      
+storeIds.replace("Truthworths",12345);
+        System.out.println(storeIds);
+        
+        storeIds.putIfAbsent("Edgars",333);
+        System.out.println(storeIds);
+        
+        storeIds.remove("Mr Price ");
+        System.out.println(storeIds);
+       
+        
+    }
+}
